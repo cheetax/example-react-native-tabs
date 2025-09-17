@@ -10,11 +10,14 @@ export default function App() {
     console.log(`Width: ${width}, Height: ${height}`);
   }
   return (
-    <View style={styles.container} onLayout={onLayout}>
-      {/* <Text>Open up App.tsx to start working on your app!</Text> */}
-      {/* <StatusBar style="auto" /> */}
+    <View style={styles.container} >
+      <StatusBar style="auto" hidden/>
+      <Text>Example react-native-tabs</Text>
+      
       <Tabs content={['Test1', 'Test2', 'Test3r', 'Test1', 'Test1', 'Test1']}
-        mode='primary' />
+        duration={200}
+        mode='primary' 
+        />
     </View>
   );
 }
@@ -24,7 +27,7 @@ const styles = StyleSheet.create({
     flex: 1,
     // height: '100%',
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
   },
 });
