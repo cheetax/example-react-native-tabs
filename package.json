@@ -2,8 +2,10 @@
   "name": "example-react-native-tabs",
   "version": "1.0.0",
   "main": "index.ts",
+  "homepage": "https://cheetax.github.io/example-react-native-tabs/",
   "scripts": {
     "start": "expo start",
+    "deploy": "gh-pages -d build",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web"
