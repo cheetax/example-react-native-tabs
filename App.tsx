@@ -2,6 +2,7 @@
 import Tabs from '@cheetax/react-native-tabs';
 import { StatusBar } from 'expo-status-bar';
 import { LayoutChangeEvent, StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function App() {
 
@@ -10,15 +11,16 @@ export default function App() {
     console.log(`Width: ${width}, Height: ${height}`);
   }
   return (
-    <View style={styles.container} >
-      <StatusBar style="auto" hidden/>
-      <Text>Example react-native-tabs</Text>
-      
-      <Tabs content={['Test1', 'Test2', 'Test3r', 'Test1', 'Test1', 'Test1']}
-        duration={200}
-        mode='primary' 
+    <SafeAreaView style={styles.container} >
+        <StatusBar style="auto" />
+        <Text>Example react-native-tabs</Text>
+
+        <Tabs content={['Test1', 'Test2', 'Test3r', 'Test1', 'Test1', 'Test1']}
+          duration={200}
+          mode='primary'
         />
-    </View>
+    </SafeAreaView>
+
   );
 }
 
