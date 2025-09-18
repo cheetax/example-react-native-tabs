@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "example-tabs",
-    "slug": "example-tabs",
+    "slug": "example-react-native-tabs",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -24,6 +24,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "016e9d04-9737-4888-9427-59a9b6366b28"
+      }
+    },
+    "owner": "cheetax"
   }
 }
