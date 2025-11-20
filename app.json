@@ -31,6 +31,35 @@
         "projectId": "016e9d04-9737-4888-9427-59a9b6366b28"
       }
     },
-    "owner": "cheetax"
+    "owner": "cheetax",
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 35,
+            "minSdkVersion": 28,
+            "buildToolsVersion": "35.0.0",
+            "enableProguardInReleaseBuilds": true,
+            "enableShrinkResourceslnReleaseBuilds": true,
+            "useLegacyPackaging": true,
+            "splits": {
+              "abi": {
+                "enable": true,
+                "universalApk": false,
+                "include": [
+                  "armeabi-v7a",
+                  "arm64-v8a"
+                ]
+              }
+            }
+          },
+          "ios": {
+            "deploymentTarget": "15.1"
+          }
+        }
+      ]
+    ]
   }
 }
